@@ -1,8 +1,17 @@
-{% extends 'inventory/base.html'%}
+{% extends 'inventory/base.html' %}
 
 {% block content %}
+<div>
+	<div class="row">
+		<div class="col-sm-11 col-md-4 mx-auto mt-5 px-3">
+			<h1 class="fw-light">Seguimiento y Gestión de tu Inventario</h1>
+			<p class="fw-light">Mantén un registro de tu inventario y recibe alertas de cantidad para inventario bajo.</p>
 
-<h1> Index </h1>
-
-
-{% endblock content%}
+			<div>
+				<a href="{% url 'dashboard' %}" class="btn btn-primary">Comienza ahora mismo!
+				</a>
+			</div>
+		</div>
+	</div>
+</div>
+{% endblock content %}
